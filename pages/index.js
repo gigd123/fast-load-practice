@@ -8,11 +8,11 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-        
       </Head>
       <div className='header'>
-      <Link href='/preload' passHref>
-          Preload
+      <a href='/preload/preload'>Preload</a>
+      <Link href='/prefetch/prefetch' passHref>
+      Prefetch
       </Link>
       </div>
       <main>
@@ -118,6 +118,9 @@ export default function Home() {
         .header {
           display: flex;
         }
+        a {
+            margin-right: 10px;
+          }
       `}</style>
     </div>
   )
