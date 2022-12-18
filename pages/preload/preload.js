@@ -11,7 +11,9 @@ const Preload = () => {
   }
   return (
     <div>
-      <link rel="preload" href='/images/image-with-preload-1.jpeg' as='image' />
+      {/* <link rel="preload" href='/images/image-with-preload-1.jpeg' as='image' /> */}
+      <link rel="prefetch" href='/images/image-with-preload-1.jpeg' type='image' />
+      <link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="myfont.woff2" />
       <div>Preload Demo</div>
       <div className='container'>
       <div className="card">
